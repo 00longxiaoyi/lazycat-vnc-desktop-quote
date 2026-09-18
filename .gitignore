@@ -1,0 +1,18 @@
+# Generated application/runtime files (upstream is UNLICENSED)
+/images/vendor/
+/sources.json
+
+# Build outputs and local validation logs
+/dist/
+/.lzc-cli-cache/
+/validation/
+*.lpk
+*.log
+
+# Python / OS / local credentials
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example

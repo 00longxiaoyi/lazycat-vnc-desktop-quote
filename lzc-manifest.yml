@@ -1,0 +1,21 @@
+usage: |
+  Linux x86_64 专用。每位用户独立桌面，报价系统随桌面自动启动。
+  报价数据和仪器附件自动持久化；PDF/PNG/备份默认保存到桌面的“报价导出（持久保存）”。
+  请勿将需要保留的文件另存到容器的临时目录。卸载时勾选清理数据会删除持久数据。
+  VNC 通过懒猫登录鉴权，请勿将 6901 端口直接公开到网络。
+application:
+  subdomain: quote-desktop
+  multi_instance: true
+  # Official VNC sample: prevents platform-initiated sleeping.
+  background_task: true
+  routes:
+    - /=http://desktop:6901/
+  depends_on:
+    - desktop
+services:
+  desktop:
+    image: crpi-kyqfans5x5yi0xen.cn-hangzhou.personal.cr.aliyuncs.com/lonng_image/liunx_lpk:1.0.0
+    run_as: "1000:1000"
+    environment:
+      TZ: Asia/Shanghai
+    shm_size: 512m

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=报价系统
+Comment=本地报价、仪器资料与报价单导出
+Exec=/usr/local/bin/start-quote
+Icon=/opt/quote-desktop/icon.png
+Terminal=false
+Categories=Office;
+StartupNotify=false
+X-GNOME-Autostart-enabled=true

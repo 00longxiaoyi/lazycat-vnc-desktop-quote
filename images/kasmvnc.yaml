@@ -1,0 +1,13 @@
+network:
+  ssl:
+    pem_certificate: ${HOME}/.vnc/self.pem
+    pem_key: ${HOME}/.vnc/self.pem
+    require_ssl: false
+  udp:
+    public_ip: 127.0.0.1
+desktop:
+  resolution:
+    width: 1440
+    height: 900
+  gpu:
+    hw3d: false

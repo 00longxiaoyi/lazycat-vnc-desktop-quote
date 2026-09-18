@@ -1,0 +1,7 @@
+package: cloud.lazycat.app.quote-desktop
+version: 1.0.0
+name: 报价系统
+description: 本地报价、仪器资料管理与 PDF/PNG 导出（VNC 桌面版）
+author: 报价系统
+license: UNLICENSED
+min_os_version: 1.6.0
